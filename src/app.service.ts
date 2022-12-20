@@ -1,8 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import whichPolygon from 'which-polygon';
-import toGeoJson from '@mapbox/togeojson';
-import { readFileSync, writeFileSync } from 'fs';
-import { DOMParser } from 'xmldom';
+import { readFileSync } from 'fs';
 
 console.time('load countries JSON');
 const countryFile = readFileSync('./src/countries.geojson', 'utf-8');
@@ -28,7 +26,6 @@ export class AppService {
     const country = queryCountry([lat, long]);
     const pcz = queryPCZ([lat, long]);
 
-    console.log(pcz);
     return { ...country, ...pcz };
   }
 }

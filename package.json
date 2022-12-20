@@ -21,19 +21,16 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@mapbox/togeojson": "^0.16.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@turf/turf": "^6.5.0",
     "@types/jsdom": "^20.0.1",
     "@types/xmldom": "^0.1.31",
-    "jsdom": "^20.0.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "which-polygon": "^2.2.0",
-    "xmldom": "^0.6.0"
+    "which-polygon": "^2.2.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
