@@ -26,6 +26,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@turf/turf": "^6.5.0",
     "@types/jsdom": "^20.0.1",
+    "@types/which-polygon": "^2.2.0",
     "@types/xmldom": "^0.1.31",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

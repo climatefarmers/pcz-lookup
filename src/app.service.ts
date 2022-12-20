@@ -20,8 +20,8 @@ console.timeEnd('load pcz KML to JSON');
 
 @Injectable()
 export class AppService {
-  lookup(coordinates: string): string {
-    const [long, lat] = coordinates.split(',');
+  lookup(coordinates: string) {
+    const [long, lat] = coordinates.split(',').map((e) => Number(e));
 
     const country = queryCountry([lat, long]);
     const pcz = queryPCZ([lat, long]);
